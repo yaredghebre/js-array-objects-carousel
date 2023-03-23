@@ -46,12 +46,14 @@ img {
     position: absolute;
     bottom: 90px;
     right: 50px;
+    font-size: .7rem;
 }
 
 .card-text {
     position: absolute;
     bottom: 70px;
     right: 50px;
+    font-size: .7rem;
 }
       
 .item img {
@@ -72,7 +74,6 @@ img {
 }
 
 .btn-play-stop, .btn-reverse {
-    font-size: 1.2rem;
     width: 100px;
     height: 50px;
     border-radius: 5px;
