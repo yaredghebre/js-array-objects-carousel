@@ -1,78 +1,113 @@
 /* RESET */
 body {
     background-color: rgba(0, 0, 0, 0.803);
-    }
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
     
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
       
-      img {
-        max-width: 100%;
-      }
+img {
+    max-width: 100%;
+}
+
+    /* Main */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
       
-      .container {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-      }
+.slider {
+    position: relative;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: lightgreen;
+}
       
-      .slider {
-        position: relative;
-        border-radius: 20px;
-        width: 50%;
-        margin: 0 auto;
-        background-color: lightgreen;
-      }
+.slider-items {
+    width: 100%;
+    height: 60vh;
+}
       
-      .slider-items {
-        width: 100%;
-        height: 60vh;
-      }
+.item {
+    display: none;
+    height: 100%;
+    color: white;
+    position: relative;
+}
+
+.card-title {
+    position: absolute;
+    bottom: 90px;
+    right: 50px;
+}
+
+.card-text {
+    position: absolute;
+    bottom: 70px;
+    right: 50px;
+}
       
-      .item {
-        display: none;
-        height: 100%;
-      }
+.item img {
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+}
       
-      .item img {
-        width: 100%;
-        border-radius: 20px;
-        height: 100%;
-        object-fit: cover;
-      }
+.item.active {
+    display: block;
+}
+
+/* Bottoni */
+.buttons {
+    text-align: center;
+    margin: -100px 100px;
+}
+
+.btn-play-stop, .btn-reverse {
+    font-size: 1.2rem;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: green;
+}
+
+.btn-reverse {
+    background-color: red;
+}
+
+/* Frecce */
+.prev,
+.next {
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-50%);
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
       
-      .item.active {
-        display: block;
-      }
+.hidden {
+    display: none;
+}
       
-      .prev,
-      .next {
-        position: absolute;
-        border-radius: 50%;
-        transform: translate(-50%);
-        left: 50%;
-        background-color: rgba(255, 255, 255, 0.8);
-        width: 30px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-      }
+.prev {
+    top: 10px;
+}
       
-      .hidden {
-        display: none;
-      }
-      
-      .prev {
-        top: 10px;
-      }
-      
-      .next {
-        bottom: 10px;
-      }
+.next {
+    bottom: 10px;
+}
       
